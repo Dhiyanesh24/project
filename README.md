@@ -53,24 +53,38 @@ Display the result.
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+
+# Load the image
 image_path = 'nature.jpg'
 img = cv2.imread(image_path)
+
+# Convert the image from BGR to RGB for displaying
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.imshow(img_rgb)
 plt.title('Original Image')
 plt.axis('off')
 plt.show()
+
+# Convert the image from BGR to HSV for color segmentation
 hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-lower_yellow = np.array([22, 93, 0])#choose the RGB values accordingly to display specific color
+
+# Define the range for yellow color in HSV
+lower_yellow = np.array([22, 93, 0])  # Adjust values as needed
 upper_yellow = np.array([45, 255, 255])
+
+# Create a mask for yellow color
 mask = cv2.inRange(hsv_img, lower_yellow, upper_yellow)
-bitwise_and 
+
+# Apply the mask to the original image using bitwise_and
 segmented_image = cv2.bitwise_and(img, img, mask=mask)
+
+# Convert the segmented image to RGB for displaying
 segmented_image_rgb = cv2.cvtColor(segmented_image, cv2.COLOR_BGR2RGB)
 plt.imshow(segmented_image_rgb)
 plt.title('Segmented Image (Yellow)')
 plt.axis('off')
 plt.show()
+
 ```
 
 
