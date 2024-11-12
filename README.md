@@ -145,7 +145,8 @@ plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 
 ### III)Perform object detection with label in an image:
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/edab24d2-268e-4b83-b1a6-feb5bbcdf010)
+
 
 
 ## Result:
