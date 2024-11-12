@@ -136,15 +136,17 @@ plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 
 ## Output:
 ### I)Perform ROI from an image:
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/67a85016-f3b5-409b-9702-3747d131dcb6)
+
 
 ### II)Perform handwritting detection in an image:
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/6782c930-e7f2-4c4d-86b9-5e129ce93944)
 
 ### III)Perform object detection with label in an image:
 
-![alt text](image-2.png)
+![Uploading image.png…]()
+
 
 ## Result:
 Thus, The python program using OpenCV to do the image manipulations is executed successfully.
